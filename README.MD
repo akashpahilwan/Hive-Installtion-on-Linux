@@ -33,10 +33,10 @@ tar xzf apache-hive-3.1.2-bin.tar.gz
 
 Step 2- Editing the Bashrc File:
 ========================
-We will be adding HIVE location(which is prsent in local system) to .basrc file. <br />
-NOTE: This process is same as adding Environment variable in Windows. <br />
+We will be adding HIVE location(which is present in local system) to .basrc file. <br />
+NOTE: This process is same as adding Environment variable in Windows OS. <br />
 
-While being in the root directory,First open .basrc file.<br />
+While being in the root directory, First open .basrc file.<br />
 ```
 sudo nano .bashrc
 ```
@@ -51,7 +51,7 @@ To reload the changes from .bashrc file:
 ```
 source ~/.bashrc
 ```
-Step 3-Editing the hive-config.sh File:
+Step 3- Editing the hive-config.sh File:
 ===================================
 
 Run the below command to open hive-config.sh.
@@ -62,9 +62,11 @@ Add the below lines of code to the end of the file.<br />
 ```
 export HADOOP_HOME=/home/hdoop/hadoop-3.3.0
 ```
+Now press Ctrl + X and then press Y.<br />
+
 NOTE: Here hdoop is the user wher I have installed hadoop and will be installing hive as well.
 
-Step 4-Creating the Hive directories in HDFS:
+Step 4- Creating the Hive directories in HDFS:
 ===================================
 
 Please make sure that hadoop is running before executing below commands one by one. <br />
